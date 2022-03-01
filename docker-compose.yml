@@ -1,0 +1,25 @@
+version: "3"
+services:
+  application:
+    image: node:14.17.6
+    container_name: tut-app
+    working_dir: /app
+    volumes:
+      - ./:/app
+    command: yarn run watch:dev
+    depends_on:
+      - mongodb
+    links:
+      - mongodb
+    ports:
+      - "1337:1337"
+    environment:
+      - MONGO_URL=mongodb://mongodb/dockerNode
+  mongodb:
+    image: mongo:5.0.3
+    volumes:
+      - mongo-data:/data/db
+    expose:
+      - "27017"
+volumes:
+  mongo-data:

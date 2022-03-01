@@ -1,0 +1,19 @@
+{
+  "name": "documento de API",
+  "data": {
+    "objects": [
+      {
+        "id": 1,
+        "contenido": "Contenido del documento 1"
+      },
+      {
+        "id": 2,
+        "contenido": "Contenido del documento 2"
+      },
+      {
+        "id": 3,
+        "contenido": "Contenido del documento 3"
+      }
+    ]
+  }
+}

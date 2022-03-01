@@ -1,3 +1,3 @@
-Este es el el README de mi repo de tut-git.
+# Tut App
 
-Expandiendo la descripción de nuestro repo en README.md
+Aplicación de Express sobre Node.js.
