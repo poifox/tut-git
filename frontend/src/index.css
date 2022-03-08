@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Times New Roman", Times, serif;
+  color: #808080;
+}
+
+.application-nav {
+  background: black;
+}
+
+.application-nav ul {
+  list-style-type: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.application-nav li {
+  display: inline-block;
+}
+
+.application-nav a {
+  color: red;
+  text-decoration: none;
+  display: block;
+  padding: 16px;
+}
+
+.application-nav a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ff8800;
+}
+
+.application-nav a.active {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.application-content {
+  padding: 16px;
+}

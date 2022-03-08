@@ -9,7 +9,7 @@
     "server": "node ./dist/index.js",
     "test": "jest",
     "prod": "NODE_ENV=production npm-run-all build server",
-    "transpile": "babel ./src --out-dir dist",
+    "transpile": "babel ./backend --out-dir dist",
     "clean": "rimraf dist",
     "build": "npm-run-all clean transpile",
     "start": "npm run prod"
@@ -29,7 +29,7 @@
   "nodemonConfig": {
     "exec": "npm run dev",
     "watch": [
-      "src/*",
+      "backend/*",
       "public/*"
     ],
     "ignore": [

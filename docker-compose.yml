@@ -1,8 +1,21 @@
 version: "3"
 services:
-  application:
+  tut-frontend:
     image: node:14.17.6
-    container_name: tut-app
+    container_name: tut-frontend
+    working_dir: /app
+    volumes:
+      - ./frontend/:/app
+    command: yarn run start
+    depends_on:
+      - tut-backend
+    links:
+      - tut-backend
+    ports:
+      - "3000:3000"
+  tut-backend:
+    image: node:14.17.6
+    container_name: tut-backend
     working_dir: /app
     volumes:
       - ./:/app
