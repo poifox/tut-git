@@ -14,7 +14,7 @@ services:
     ports:
       - "3000:3000"
   tut-backend:
-    image: node:14.17.6
+    image: node:14
     container_name: tut-backend
     working_dir: /app
     volumes:

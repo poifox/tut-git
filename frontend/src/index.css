@@ -57,3 +57,47 @@ h6 {
 .application-content {
   padding: 16px;
 }
+
+.message {
+  display: block;
+  clear: both;
+}
+
+.message-error {
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid red;
+  color: red;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+form {
+  width: 100%;
+  display: block;
+}
+
+textarea,
+input[type=text],
+input[type=password],
+input[type=email] {
+  padding: 4px 8px;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 4px;
+  margin-right: 16px;
+  border-radius: 4px;
+  border: 1px solid #505050;
+  background: #f0f0f0;
+}
+
+textarea {
+  min-height: 10rem;
+}
+
+.page {}
+
+.narrow-page {
+  width: 100%;
+  margin: auto;
+  max-width: 640px;
+}

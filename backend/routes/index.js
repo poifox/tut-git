@@ -2,12 +2,11 @@ import { Router } from 'express';
 
 const router = Router();
 
-router.get('/', (req, res) => {
-    res.send('Hola desde el router!');
-});
-
-router.get('/privacy', (req, res) => {
-    res.send('Esta es nuestra política de privacidad!');
+router.get('/', async (req, res) => {
+    res.json({ status: 200, message: 'Successful', data: {
+        name: 'Mi Aplicación',
+        version: '1.0.0'
+    }});
 });
 
 export default router;
